@@ -37,5 +37,5 @@ blog = "/:year/:month/:slug/"
 [0]: https://gumroad.com/l/spicerpremium
 [1]: https://www.way2themes.com/
 [2]: https://kangmicin.com/
-[3]: https://kangmicin.netlify.com/
-[4]: https://hugosample.blogspot.com/
+[4]: http://kangmicin.netlify.com/
+[3]: http://hugosample.blogspot.com/
