@@ -1,5 +1,9 @@
 # Hugo Spicer 
-This is hugo themes that i convert from blogger templatae calledd faa from [spicer][0] an blogger template and make by [way2themes][1]. I just convert template into the hugo template, move some unused code and add some function. This not complete themes but it wor well and has lots of feature.
+
+![home page spicer](/static/capture/home.png)
+This is Hugo themes that I convert from blogger template called  [spicer][0] a blogger template and make by [way2themes][1]. I just convert the template into the Hugo template, move some unused code and add some function. This not complete themes but has necessary feature need to staring blog site.
+
+> **warning**: this theme using Hugo extends version also work well on latest release
 
 ## Theme Features
 
@@ -10,17 +14,17 @@ This is hugo themes that i convert from blogger templatae calledd faa from [spic
 - [x] Automatic Select First Image as Thumbnail
 - [ ] SEO Tags
 - [ ] Category
-- [ ] Comment Box
+- [ ] Comment 
 - [ ] Recomended Post
 
-> This is work in progress themes mean can be some error just put an issue and i will fix it ASAP
+> This is work in progress themes mean can be some error just put an issue and I will fix it ASAP
 
 ## Move From Hugo Into Hugo
 
-For you want moving from blogger into hugo without messy can following my tutorial in
-this blog post [how to move from blogger into hugo complete series][2].
+For you want to move from blogger into Hugo without messy can following my tutorial in
+this blog post [how to move from blogger into Hugo complete series][2].
 
-## Using Blogger Permalink
+## Applying Blogger Permalink
 Put all markdown file inside `blog` folder and add these into your `config.toml`
 
 ```toml
