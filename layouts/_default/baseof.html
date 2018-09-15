@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+<!-- Content Wrapper -->
+<div class='row' id='content-wrapper'>
+    <div class='container wrapper'>
+        <!-- Main Wrapper -->
+        <div id='main-wrapper' class="content">
+            {{ block "main" . }}{{ end }}
+        </div>
+        <!-- Sidebar Wrapper -->
+        <div id='sidebar-wrapper' class="sidebar">
+            <div class='sidebar common-widget section' id='sidebar-right' name='Sidebar Right'>
+                {{ partial "popularpost" . }}
+                {{ partial "facebook" . }}
+                {{ partial "categories" . }}
+                {{ partial "tags" . }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "footer" . }}

@@ -1,0 +1,6 @@
+{{- $image := delimit (first 1 (split (delimit (findRE "https?:.*" .RawContent 1) "") ")")) " " | safeURL -}}
+{{- if $image -}}
+{{ $image }}
+{{- else -}}
+{{ "https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/s1600/nth.png" | safeURL}}
+{{- end }}

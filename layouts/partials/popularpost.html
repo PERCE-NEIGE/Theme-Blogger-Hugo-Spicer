@@ -1,0 +1,15 @@
+<div class='widget PopularPosts' data-version='2' id='PopularPosts1'>
+  <div class='widget-title'>
+  <h3 class='title'>
+  Popular Posts
+  </h3>
+  </div>
+  <div class='widget-content'>
+    {{ $popular := .Site.Data.postindex.popular }}
+    {{ range $popular }}
+    {{ with $.Site.GetPage . }}
+      {{ .Render "li_xs" }}
+    {{ end }}
+    {{ end }}
+  </div>
+  </div>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class='ltr' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data'
+  xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+  <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport' />
+  <title>{{ .Title }}</title>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta content='#f8f8f8' name='theme-color' />
+  <!-- Windows Phone -->
+  <meta content='#f8f8f8' name='msapplication-navbutton-color' />
+  <meta content='blogger' name='generator' />
+  <link href='{{ .Site.BaseURL }}/favicon.ico' rel='icon' type='image/x-icon' />
+  <link href='{{ .Site.BaseURL }}' rel='canonical' />
+  <link rel="alternate" type="application/atom+xml" title="{{ .Title }} - Atom" href="{{ .Site.BaseURL }}/feeds/posts/default" />
+  <link rel="alternate" type="application/rss+xml" title="{{ .Title }} - RSS" href="{{ .Site.BaseURL }}/feeds/posts/default?alt=rss" />
+  <link rel="service.post" type="application/atom+xml" title="{{ .Title }} - Atom" href="https://www.blogger.com/feeds/1432821647614149980/posts/default" />
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content='{{ .Site.BaseURL }}' property='og:url' />
+  <meta content='{{ .Title }}' property='og:title' />
+  <meta content='' property='og:description' />
+  <meta content='//4.bp.blogspot.com/-_CYa4viSHPQ/VffHrbXEn5I/AAAAAAAAN0Y/_k5r7fhabI4/w1200-h630-p-k-no-nu/fashion_white-hair-flying-light-blue_069K.jpg'
+    property='og:image' />
+  <meta content='//1.bp.blogspot.com/-PTebdj7KqIQ/VffQSajPb4I/AAAAAAAAOeE/sO80Yqh5RCA/w1200-h630-p-k-no-nu/photography_a-shot-for-life_81K.jpg'
+    property='og:image' />
+  <meta content='https://lh6.googleusercontent.com/proxy/Fb571SlLwZTy08I3E4OsW-VaWe4mpgBLBzgjV61McydWB2PmjHhlU4p263b2rmOAYBU16rJWL1PA009E=w1200-h630-n-k-no-nu'
+    property='og:image' />
+  <meta content='//4.bp.blogspot.com/-L0qse-6O1pI/VffMCHuivRI/AAAAAAAAOIU/B0Mhk2qreJA/w1200-h630-p-k-no-nu/health_alcohol-percent-in-cocktail-affect-heart_222K.jpg'
+    property='og:image' />
+  <meta content='https://lh3.googleusercontent.com/proxy/jhoAXSL23MkeFgb6_dsrJ4fIvW3rAycw_sChac_cvj7p6r3LT8BxH9rmr8fYI1ZTx7uvFiRXoiobKBr0=w1200-h630-n-k-no-nu'
+    property='og:image' />
+  <meta content='//4.bp.blogspot.com/-G_aTQTCsk0Y/VffXDPrs8TI/AAAAAAAAPCk/Qgi2Lnz35vs/w1200-h630-p-k-no-nu/world_businessman-as-president_329K.jpg'
+    property='og:image' />
+  <meta content='//3.bp.blogspot.com/-uFxr4Xry1xg/VffSEVZJ4bI/AAAAAAAAOnw/aH2K1YtyruM/w1200-h630-p-k-no-nu/sport_biker-for-charity_115K.jpg'
+    property='og:image' />
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <!-- Google Fonts -->
+  <link href='//fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab:400,700' media='all' rel='stylesheet'
+    type='text/css' />
+  <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+
+  {{ $css := resources.Get "css/main.css" }}
+  {{ $style := $css | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <!-- Google Analytics -->
+
+</head>
+
+<body class='index home'>
+  <!-- Outer Wrapper -->
+  <div id='outer-wrapper'>
+    <!-- Header Wrapper -->
+    <div id='header-wrap'>
+      <div class='header-header'>
+        <div class='container row'>
+          <div class='header-logo section' id='header-logo' name='Header Logo'>
+            <div class='widget Header' data-version='2' id='Header1'>
+              <div class='header-widget'>
+                <a class='header-brand' href='{{ .Site.BaseURL }}/'>
+                  <img alt='{{ .Title }}' data-height='116' data-width='257' src='//1.bp.blogspot.com/-DPzJ5_wlX8o/W3PFTYuGKyI/AAAAAAAAC2I/1n7t73HPfj0zdAaop6Land8i8wBf15xUwCK4BGAYYCw/s1600/logo.png' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='header-menu'>
+        <div class='container row'>
+          <span class='mobile-menu-toggle'></span>
+          <div class='main-menu section' id='main-menu' name='Main Menu'>
+            <div class='widget LinkList' data-version='2' id='LinkList74'>
+              {{ partial "navmenu" . }}
+            </div>
+          </div>
+          <div id='nav-search'>
+            <form method="GET" action='https://cse.google.com/cse?cx={{ .Site.Params.cse }}' class='search-form' role='search'>
+              <input autocomplete='off' class='search-input' name='q' placeholder='Cari blog ini' type='search' value='' />
+              <button class='search-action' type='submit' value=''><i class='fa fa-search'></i></button>
+            </form>
+          </div>
+          <span class='show-search'></span>
+        </div>
+        <div class='mobile-menu-wrap'>
+          <div class='mobile-menu'></div>
+        </div>
+      </div>
+    </div>
+    <div class='clearfix'></div>

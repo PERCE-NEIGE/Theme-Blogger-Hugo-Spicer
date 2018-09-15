@@ -1,0 +1,21 @@
+{{ range (first 1 .Site.RegularPages) }}
+{{ $tag := (first 1 .Params.tags) }}
+<div class='footer common-widget section' id='footer-sec2' name='Footer Section (Center)'>
+  <div class='widget HTML' data-version='2' id='HTML3'>
+    <div class='widget-title'>
+      <h3 class='title'>
+        Recent in {{ range $tag}}{{.}}{{end}}
+      </h3>
+    </div>
+    <div class='widget-content'>
+      <ul class="custom-widget">
+        {{ range (where $.Site.RegularPages ".Params.tags" "intersect" (first 1 .Params.tags) )}}
+        <li>
+          {{ .Render "li_xs" }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{ end }}

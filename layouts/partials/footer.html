@@ -1,0 +1,59 @@
+<div class='clearfix'></div>
+<!-- Footer Wrapper -->
+<div id='footer-wrapper'>
+  <div class='container row'>
+  <div class='footer-widgets-wrap'>
+    {{ partial "recentpost" . }}
+  {{ partial "postbytag" . }}
+  {{ partial "mostpopularpost" . }}
+  </div>
+  </div>
+  <div class='clearfix'></div>
+  <div id='sub-footer-wrapper'>
+  <div class='container row'>
+  <div class='menu-footer section' id='menu-footer' name='Footer Social Icons'><div class='widget LinkList' data-version='2' id='LinkList76'>
+  <div class='widget-title'>
+  <h3 class='title'>
+  Social Widget
+  </h3>
+  </div>
+  <div class='widget-content'>
+  <ul class='social'>
+  <li class='facebook'><a href='https://facebook.com/{{ .Site.Params.facebook}}' target='_blank'></a></li>
+  <li class='twitter'><a href='https://twitter.com/{{ .Site.Params.twitter}}' target='_blank'></a></li>
+  <li class='gplus'><a href='https://plus.google.com.com/{{ .Site.Params.gplus}}' target='_blank'></a></li>
+  <li class='pinterest'><a href='https://pinterest.com/{{ .Site.Params.pinterest}}' target='_blank'></a></li>
+  <li class='instagram'><a href='https://instagram.com/{{ .Site.Params.instagram}}' target='_blank'></a></li>
+  </ul>
+  </div>
+  </div></div>
+  <div class='copyright-area'>Designed with <i aria-hidden='true' class='fa fa-heart' style='color: red;margin:0 2px;'></i> by <a href='http://www.way2themes.com/' id='mycontent' rel='dofollow' title='Free Blogger Templates'>Way2themes</a> | Modified By <a title="Kangmicin - Tuntunan, Berita, Teknologi, Game, Blog dan Lelucon menarik" href='https://kangmicin.com/' rel='dofollow' style='color:#0be6af;' target='_blank'>Kangmicin</a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  {{ $jquery := resources.Get "js/jquery.min.js" }}
+  {{ $sticky := resources.Get "js/theia-sticky-sidebar.js" }}
+  {{ $global := resources.Get "js/global.js" }}
+  {{ $js := slice $jquery $sticky $global | resources.Concat "js/bundle.js" }}
+  <script src="{{ $js.Permalink }}"></script>
+  <!-- Facebook SDK -->
+  <script type='text/javascript'>
+  //<![CDATA[
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  //]]>
+  </script>
+  <!-- Overlay and Back To Top -->
+  <div class='overlay'></div>
+  <div class='back-top' title='Back to Top'></div>
+
+  </body>
+  </html>

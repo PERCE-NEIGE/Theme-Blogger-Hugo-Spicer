@@ -1,0 +1,194 @@
+{{ define "main" }}
+<div class="main section" id="main" name="Main Posts" style="margin-top: -26px">
+  <div class="widget Blog" data-version="2" id="Blog1">
+    <div class="blog-posts hfeed item-post-wrap">
+      <div class="blog-post hentry item-post">
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "http://hugosample.blogspot.com/2018/09/how-dress-shops-make-you-better-lover.html"
+            },
+            "headline": "{{ .Title }}",
+            "description": "The 16 best dress shop youtube videos. 18 amazing stylist pictures. The evolution of trendy cloths. How twitter can teach you about wholesale dresses&#8230;",
+            "datePublished": "2018-09-03T10:28:00-07:00",
+            "dateModified": "2018-09-13T03:01:45-07:00",
+            "image": {
+              "@type": "ImageObject",
+              "url": "//4.bp.blogspot.com/-_CYa4viSHPQ/VffHrbXEn5I/AAAAAAAAN0Y/_k5r7fhabI4/w1200-h630-p-k-no-nu/fashion_white-hair-flying-light-blue_069K.jpg",
+              "height": 630,
+              "width": 1200
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Blogger",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60",
+                "width": 206,
+                "height": 60
+              }
+            },
+            "author": {
+              "@type": "Person",
+              "name": "KangMicin Web"
+            }
+          }
+        </script>
+        <div class="post-content-wrap">
+          <div class="post-header blog-post-info">
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "name": "Beranda",
+                    "@id": "https://hugosample.blogspot.com/"
+                  }
+                }, {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "name": "Fashion",
+                    "@id": "https://hugosample.blogspot.com/search/label/Vogue"
+                  }
+                }, {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "name": "{{ .Title }}",
+                    "@id": "{{ .Permalink }}"
+                  }
+                }]
+              }
+            </script>
+            <h1 class="post-title">
+              {{ .Title}}
+            </h1>
+            <div class="post-meta">
+              <span class="post-author"><em>by</em>
+                <a href="https://plus.google.com/111546777627930093863" target="_blank" title="KangMicin Web">KangMicin
+                  Web</a></span>
+              <span class="post-date published" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05JST" }}">{{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</span>
+              <span class="post-reply"><a href="{{ .Permalink }}#comments">0
+                  Comments</a></span>
+            </div>
+          </div>
+          <div class="post-body post-content">
+            {{ .Content }}
+          </div>
+          <div class="post-content-footer">
+            <div class="post-labels">
+              <span class="labels-icon"></span>
+              {{ range .Params.tags }}
+              <span class="Label"><a class="label-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/"
+                  rel="tag">{{ . }}</a></span>
+              {{ end }}
+            </div>
+            <div class="post-share">
+              <ul class="share-links social">
+                <li class="facebook-f"><a class="facebook" href="https://www.facebook.com/sharer.php?u={{ .Permalink }}"
+                    onclick="window.open(this.href, 'windowName', 'width=550, height=650, left=24, top=24, scrollbars, resizable'); return false;"
+                    rel="nofollow"></a></li>
+                <li class="twitter"><a class="twitter" href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}"
+                    onclick="window.open(this.href, 'windowName', 'width=550, height=450, left=24, top=24, scrollbars, resizable'); return false;"
+                    rel="nofollow"></a></li>
+                <li class="pinterest-p"><a class="pinterest" href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}&amp;media=//4.bp.blogspot.com/-_CYa4viSHPQ/VffHrbXEn5I/AAAAAAAAN0Y/_k5r7fhabI4/s1600/fashion_white-hair-flying-light-blue_069K.jpg&amp;description={{ .Title }}"
+                    onclick="window.open(this.href, 'windowName', 'width=735, height=750, left=24, top=24, scrollbars, resizable'); return false;"
+                    rel="nofollow"></a></li>
+                <li class="gplus"><a class="gplus" href="https://plus.google.com/share?url={{ .Permalink }}"
+                    onclick="window.open(this.href, 'windowName', 'width=400, height=500, left=24, top=24, scrollbars, resizable'); return false;"
+                    rel="nofollow"></a></li>
+                <li class="linkedin"><a class="linkedin" href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}"
+                    onclick="window.open(this.href, 'windowName', 'width=1000, height=650, left=24, top=24, scrollbars, resizable'); return false;"
+                    rel="nofollow"></a></li>
+                <li class="whatsapp whatsapp-desktop"><a class="whatsapp" href="https://web.whatsapp.com/send?text={{ .Title }} | {{ .Permalink }}"
+                    onclick="window.open(this.href, 'windowName', 'width=900, height=550, left=24, top=24, scrollbars, resizable'); return false;"
+                    rel="nofollow"></a></li>
+                <li class="whatsapp whatsapp-mobile"><a class="whatsapp" href="https://api.whatsapp.com/send?text={{ .Title }} | {{ .Permalink }}"
+                    rel="nofollow" target="_blank"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='clearfix'></div>
+        <div class="post-footer">
+          <ul class="post-nav">
+            {{ with .Next }}
+            <li class="post-next">
+              <a rel="next" href="{{ .Permalink }}">
+                <div class="post-nav-inner post-nav-active"><span>Terbaru</span>
+                  <p>
+                      {{ .Title }}
+                    </p>
+                  </div>
+                </a>
+              </li>
+              {{ end }}
+              {{ with .Prev }}
+            <li class="post-prev">
+              <a class="prev-post-link" href="{{ .Permalink }}"
+                id="Blog1_blog-pager-older-link" rel="previous">
+                <div class="post-nav-inner"><span>Lebih lama</span>
+                  <p>
+                      {{ .Title }}
+                  </p>
+                </div>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+          <div id="related-wrap">
+            <div class="related-title">
+              <h3>Anda mungkin menyukai postingan ini</h3>
+            </div>
+            <div class="related-ready">
+              {{ $related := .Site.RegularPages.Related . }}
+              {{ $tags := where .Site.RegularPages ".Params.tags" "intersect" .Params.tags }}
+              {{ $lates := .Site.RegularPages }}
+              <ul class="related-posts">
+                {{ $recomended := $related | union $tags | union $lates }}
+                {{ range (first 3 $recomended) }}
+                <li class="related-item">
+                  <div class="post-image-wrap"><a class="post-image-link" href="{{ .Permalink }}"><img
+                        class="post-thumb" alt="{{ .Title }}" src="{{ partial "postimage" . }}"></a></div>
+                  <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                  <div class="post-meta"><span class="post-date">{{ .Lastmod.Format (.Site.Params.dateformat | default "Jan 2, 2006") }}</span></div>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-post-comments comments-system-blogger" style="display: block;">
+
+        <section class="comments embed no-comments" data-num-comments="0" id="comments">
+          <a name="comments"></a>
+          <h3 class="title">0
+            Komentar</h3>
+          <div id="Blog1_comments-block-wrapper">
+          </div>
+          <div class="footer">
+            <div class="comment-form">
+              <a name="comment-form"></a>
+              <a href="https://www.blogger.com/comment-iframe.g?blogID=1432821647614149980&amp;postID=1908031548946054231&amp;skin=contempo&amp;blogspotRpcToken=2359003"
+                id="comment-editor-src"></a>
+              <iframe allowtransparency="allowtransparency" class="blogger-iframe-colorize blogger-comment-from-post"
+                frameborder="0" height="90px" id="comment-editor" name="comment-editor" src="https://www.blogger.com/comment-iframe.g?blogID=1432821647614149980&amp;postID=1908031548946054231&amp;skin=contempo&amp;blogspotRpcToken=2359003"
+                width="100%" data-resized="true"></iframe>
+
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

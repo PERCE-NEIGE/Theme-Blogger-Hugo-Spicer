@@ -1,0 +1,27 @@
+{{ $tag := cond (isset .Params "tags") .Params.tags slice }}
+<div class='blog-post hentry index-post'>
+  <div class='post-info blog-post-info'>
+    <h2 class='post-title'>
+      <a href='{{  .Permalink }}'>{{ .Title }}</a>
+    </h2>
+    <div class='post-meta'>
+      <span class='post-author'><em>oleh</em>
+        <a href='https://plus.google.com/111546777627930093863' target='_blank' title='KangMicin Web'>KangMicin Web</a></span>
+      <span class='post-date published' datetime='{{ .Lastmod.Format "2006-01-02T15:04:05JST" }}'>{{ .Lastmod.Format (.Site.Params.dateformat | default "Jan 2, 2006") }}</span>
+      <span class='post-reply'><a href='{{  .Permalink }}#comments'>0
+          Comments</a></span>
+    </div>
+  </div>
+  <div class='post-image-wrap'>
+    <a class='post-image-link' href='{{  .Permalink }}'>
+      <img alt='How dress shops make you a better lover' class='post-thumb' src='{{ partial "postimage" . }}' />
+    </a>
+  </div>
+  <div class='post-content'>
+    <p class='post-snippet'>{{ substr .Summary 0 269 }}&#8230;</p>
+    <div class='post-footer'>
+      <span class='post-tag'>{{ range (first 1 $tag) }} {{.}}{{end}}</span>
+      <a class='read-more' href='{{  .Permalink }}'>Baca selengkapnya</a>
+    </div>
+  </div>
+</div>

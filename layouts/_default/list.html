@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="main section" id="main" name="Main Posts">
+  <div class="widget Blog" data-version="2" id="Blog1">
+    <div class="queryMessage">
+      <span class="query-info query-success">Menampilkan postingan dengan label <span class="search-label">{{ .Title}}</span></span><a
+        class="show-more" href="{{ .Site.BaseURL }}">Tunjukkan semua</a>
+    </div>
+    <div class="blog-posts hfeed index-post-wrap">
+      {{ range .Data.Pages }}
+        {{ .Render "li_sm" }}
+      {{ end }} 
+    </div>
+    {{ partial "paginate" . }}
+  </div>
+</div>
+
+{{ end }}
