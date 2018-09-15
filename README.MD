@@ -21,7 +21,7 @@ This is Hugo themes that I convert from blogger template called  [spicer][0] a b
 
 > This is work in progress themes mean can be some error just put an issue and I will fix it ASAP
 
-## Move From Hugo Into Hugo
+## Move From Blogger Into Hugo
 
 For you want to move from blogger into Hugo without messy can following my tutorial in
 this blog post [how to move from blogger into Hugo complete series][2].
