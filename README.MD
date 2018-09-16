@@ -36,6 +36,6 @@ blog = "/:year/:month/:slug/"
 
 [0]: https://gumroad.com/l/spicerpremium
 [1]: https://www.way2themes.com/
-[2]: https://kangmicin.com/
+[2]: https://kangmicin.com/2018/09/14/langkah-pindah-blogger-hugo/
 [4]: http://kangmicin.netlify.com/
 [3]: http://hugosample.blogspot.com/
